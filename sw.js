@@ -1,5 +1,23 @@
+
+const cacheName = 'cache-v1';
+const resourceToPrecache = [
+    '/',
+    'index.html',
+    'css/main.css',
+    'css/normalize.css',
+    'img/logo/pwa 192x192.png',
+    'img/logo/pwa 512x512.png'
+];
+
 self.addEventListener('install', event => {
     console.log('Install event!', event);
+
+    event.waitUntil(
+        caches.open(cacheName)
+            .then(cache => {
+                return cache.addAll(resourceToPrecache);
+            })
+    );
 });
 
 self.addEventListener('activate', event => {
