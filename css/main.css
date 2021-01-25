@@ -1,0 +1,11 @@
+body {
+    background: #6dcdb1;
+}
+
+div.navbar {
+    background: #009578;
+    text-align: center;
+    color: #eee;
+    font-family: monospace;
+    font-size: large;
+}
