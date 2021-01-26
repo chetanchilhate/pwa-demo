@@ -4,20 +4,20 @@
     "description": "PWA Demo App",
     "icons": [
         {
-          "src": "/img/logo/pwa 192x192.png",
+          "src": "/pwa-demo/img/logo/pwa 192x192.png",
           "type": "image/png",
           "sizes": "192x192",
           "purpose": "any maskable"
         },
         {
-          "src": "/img/logo/pwa 512x512.png",
+          "src": "/pwa-demo/img/logo/pwa 512x512.png",
           "type": "image/png",
           "sizes": "512x512"
         }
       ],
-      "start_url": "/",
+      "start_url": "/pwa-demo/",
       "background_color": "#6dcdb1",
       "display": "standalone",
-      "scope": "/",
+      "scope": "/pwa-demo/",
       "theme_color": "#009578"
 }

@@ -1,12 +1,14 @@
 
+const ROOT_PATH = '/pwa-demo';
+
 const cacheName = 'cache-v1';
 const resourceToPrecache = [
-    '/',
-    'index.html',
-    'css/main.css',
-    'css/normalize.css',
-    'img/logo/pwa 192x192.png',
-    'img/logo/pwa 512x512.png'
+    ROOT_PATH + '/', 
+    ROOT_PATH + '/index.html',
+    ROOT_PATH + '/css/main.css',
+    ROOT_PATH + '/css/normalize.css',
+    ROOT_PATH + '/img/logo/pwa 192x192.png',
+    ROOT_PATH + '/img/logo/pwa 512x512.png'
 ];
 
 self.addEventListener('install', event => {
